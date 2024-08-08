@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>State Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #2980b9, #ffffff);
+            color: #333;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #007BFF;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="Games.html">Games</a>
+        <a href="Home.html">Home</a>
+    </nav>
+
+    <script type="text/javascript">
+
+
+        var score;
+        var answer1;
+        var answer2;
+        var answer3;
+        var answer4;
+        var answer5;
+        var answer6;
+        var answer7;
+        var answer8;
+        var answer9;
+        var answer10;
+        score = 0;
+        document.write("<h1 style = font-size:24>Thanks for Playing! </br> </h1>")
+        document.write("<h2 style = font-size:20>Your Scores are:</h1>")
+
+        window.alert("Please Choose each state capitals ");
+        //Question 1
+        answer1 = window.prompt(" What is the Capital of Missouri? \n\ Choices: \n\ Kansas City \n\ Jefferson City \n\ St. Louis \n\ Moberly").toLowerCase();
+        if (answer1 === "jefferson city") {
+            score++;
+            document.write("You Got Question 1 right! \n\ ");
+        } else (document.write("You did not Answer Question 1 Correct \n\ "));
+        //Question 2 
+
+        answer2 = window.prompt(" What is the Capital of Utah? \n\ Choices: \n\ Salt Lake City \n\ Park City \n\ Cedar City \n\ West Valley City").toLowerCase();
+        if (answer2 === "salt lake city") {
+            score++;
+            document.write(" </br> You Got Question 2 right!");
+        } else (document.write("</br>  You did not Answer Question 2 Correct"));
+        //Question 3
+        answer3 = window.prompt(" What is the Capital of Texas? \n\ Choices: \n\ Dallas \n\ Austin \n\ Houston \n\ Tyler").toLowerCase();
+        if (answer3 === "austin") {
+            score++;
+            document.write(" </br> You Got Question 3 right!");
+        } else (document.write("</br>  You did not Answer Question 3 Correct"));
+
+        //Question 4
+        answer4 = window.prompt(" What is the Capital of Florida? \n\ Choices: \n\ Miami \n\ Tampa \n\ Tallahassee \n\ Orlando").toLowerCase();
+        if (answer4 === "tallahassee") {
+            score++;
+            document.write(" </br> You Got Question 4 right!");
+        } else (document.write("</br>  You did not Answer Question 4 Correct"));
+        //Question 5
+        answer5 = window.prompt(" What is the Capital of New York? \n\ Choices: \n\ Buffalo \n\ Albany \n\ New York City \n\ Yonkers").toLowerCase();
+        if (answer5 === "albany") {
+            score++;
+            document.write(" </br> You Got Question 5 right!");
+        } else (document.write("</br>  You did not Answer Question 5 Correct"));
+        //Question 6
+        answer6 = window.prompt(" What is the Capital of Kansas? \n\ Choices: \n\ Topeka \n\ Kansas City \n\ Overland Park \n\ Lawrence").toLowerCase();
+        if (answer6 === "topeka") {
+            score++;
+            document.write(" </br> You Got Question 6 right!");
+        } else (document.write("</br>  You did not Answer Question 6 Correct"));
+
+        //Question 7
+        answer7 = window.prompt(" What is the Capital of Washington? \n\ Choices: \n\ Tacoma \n\ Seattle \n\ Olympia \n\ Everett").toLowerCase();
+        if (answer7 === "olympia") {
+            score++;
+            document.write(" </br> You Got Question 7 right!");
+        } else (document.write("</br>  You did not Answer Question 7 Correct"));
+
+        //Question 8
+        answer8 = window.prompt(" What is the Capital of California? \n\ Choices: \n\ Bakersfield \n\ Los Angeles \n\ Fresno \n\ Sacramento").toLowerCase();
+        if (answer8 === "sacramento") {
+            score++;
+            document.write(" </br> You Got Question 8 right!");
+        } else (document.write("</br>  You did not Answer Question 8 Correct"));
+
+        //Question 9
+        answer9 = window.prompt(" What is the Capital of Wyoming? \n\ Choices: \n\ Cheyenne \n\ Casper \n\ Laramie \n\ Jackson").toLowerCase();
+        if (answer9 === "cheyenne") {
+            score++;
+            document.write(" </br> You Got Question 9 right!");
+        } else (document.write("</br>  You did not Answer Question 9 Correct"));
+
+        //Question 10
+        answer10 = window.prompt(" What is the Capital of Oregon? \n\ Choices: \n\ Newport \n\ Roseburg \n\ Salem \n\ Portland").toLowerCase();
+        if (answer10 === "portland") {
+            score++;
+            document.write(" </br> You Got Question 10 right!");
+        } else (document.write("</br>  You did not Answer Question 10 Correct"));
+
+        //Display Score 
+        var grade = (score / 10) * 100
+        document.write("<h1> You Got " + score + "/10</h1>")
+        document.write("<h1> Your Grade is " + grade + ("%</h1>"))
+    </script>
+</body>
+</html>

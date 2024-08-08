@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Animations</title>
+    <style>
+        .background {
+            margin:0;
+            padding:0;
+            height:100vh;
+            background: linear-gradient(to bottom, #2980b9, #ffffff);
+            animation: changeBack 10s infinite alternate;
+        }
+        @keyframes changeBack {
+            0% {background: linear-gradient(to bottom, #2980b9, #ffffff);}
+            25% { background: linear-gradient(to bottom,#1f6696,#ffffffbd);}
+            50% { background: linear-gradient(to bottom,#194f74,#ffffff5b);}
+            75% { background: linear-gradient(to bottom,#5b29b9,#ffffff25);}
+            100% { background: linear-gradient(to bottom,#b9297d,#ffffff04);}
+
+        }
+        .square {
+            position: fixed;
+            top: 50%;
+            left:20%;
+            width: 100px;
+            height: 100px;
+            background-color:#b9297d;
+            animation:changeSquare 10s infinite alternate;
+
+        }
+        @keyframes changeSquare {
+            0% { top: 50%; left:20%; background-color:#b9297d;}
+            25% {top: 50%; left: 80%; background-color:#5b29b9;}
+            50% { top: 65%; left: 80%; background-color:#5b29b9;}
+            75% { top: 65%; left: 20%; background-color:#1f6696;}
+            100% { top: 50%; left: 20%; background-color:#2980b9;}
+
+        }
+
+        nav {
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #007BFF;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="Home.html">Home</a>
+    </nav>
+
+    <div class="background"></div>
+    <div class = "square"></div>
+</body>
+</html>
